@@ -111,7 +111,7 @@ const styles = {
 
 class AutoRotatingCarousel extends Component {
   state = {
-    slideIndex: startIndex
+    slideIndex: this.props.startIndex
   }
 
   handleContentClick = (e) => e.stopPropagation() || e.preventDefault()
