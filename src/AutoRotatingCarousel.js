@@ -144,8 +144,11 @@ class AutoRotatingCarousel extends Component {
 
   static getDerivedStateFromProps(props, state){
     console.log(props,state)
-    if (props.startIndex !== state.slideIndex) 
+    if (props.startIndex !== state.slideIndex) { 
       return {slideIndex:startIndex}
+    } else {
+      return null
+    }
   }
 
   render () {
